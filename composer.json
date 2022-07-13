@@ -1,0 +1,34 @@
+{
+    "name": "linenotify/noise",
+    "type": "project",
+    "description": "nake line notify noise.",
+    "keywords": [
+        "line notify"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/dotenv": "^5.4"
+    },
+    "autoload": {
+        "files": [
+            "app/Helper.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "scripts": {},
+    "extra": {},
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
