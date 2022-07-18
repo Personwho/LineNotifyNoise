@@ -7,5 +7,8 @@
 2. 安裝composer套件
 ```
 $ composer install
+$ composer dumpautoload
 ```
-3. 執行`exe.bat` 或`exe.sh`
+3. 至[Line Notify](https://notify-bot.line.me/zh_TW/)申請權杖
+4. 將Line Notify加入至群組
+5. 執行`exe.bat` 或`exe.sh`
