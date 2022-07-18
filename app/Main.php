@@ -6,7 +6,11 @@ use Symfony\Component\Dotenv\Dotenv;
 require 'vendor/autoload.php';
 
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__.'/../.env');
+if (file_exists(__DIR__.'/../.env')) {
+    $dotenv->load(__DIR__.'/../.env');
+} else {
+    $dotenv->load(__DIR__.'/../.env.example');
+}
 
 // 預設值
 // 傳送訊息
