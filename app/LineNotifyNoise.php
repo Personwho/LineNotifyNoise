@@ -41,6 +41,7 @@ class LineNotifyNoise
                 ."&stickerId=$stickerId";
 
         $client = new Client([
+            'verify' => false,
             'timeout' => 2.0,
         ]);
 

@@ -2,7 +2,7 @@
 
 if (!function_exists('env')) {
     /**
-     * 預約成功
+     * 讀取$_ENV設定, 如果沒有則讀取$default值.
      *
      * @param string $name    環境變數名稱
      * @param string $default 預設值, 找不到時回傳
